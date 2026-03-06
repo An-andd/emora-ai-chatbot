@@ -177,7 +177,7 @@ def clear_history():
 # ---------------- AUDIO UPLOAD ---------------- #
 
 
-ASSEMBLY_API_KEY = "3752cbf8c92840d2897a9705a68ae332"
+ASSEMBLY_API_KEY = os.getenv("ASSEMBLY_API_KEY")
 
 
 @app.route("/audio", methods=["POST"])
